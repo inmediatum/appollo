@@ -50,6 +50,8 @@ Appollo is designed to work in iOS 8 o greater.
 
 ### Manage notifications on foreground
 
+[Take look Appollo Console source-code for complete example](https://github.com/inmediatum/appollo-console-ios)
+
 1.- Implement the ```<APMonitorDelegate>``` protocol
 
 2.- Delegate Monitor in your class.
