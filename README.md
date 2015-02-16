@@ -38,7 +38,7 @@
   * Acts as a Bluetooth LE Accesory
   * Remote Notifications
 
-7.- In your Info.plist add NSLocationAlwaysUsageDescription in value explain to the user why the app should use them location.
+7.- In Info.plist add NSLocationAlwaysUsageDescription and explain in natural language why your app should use the location.
 
 8.- In Build Settings -> Other Linker Flags add -ObjC
 
