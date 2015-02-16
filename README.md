@@ -40,6 +40,8 @@
 
 7.- In your Info.plist add NSLocationAlwaysUsageDescription in value explain to the user why the app should use them location.
 
+8.- In Build Settings -> Other Linker Flags add -ObjC
+
 ### Requeriments
 
 Appollo is designed to work in iOS 8 o greater.
