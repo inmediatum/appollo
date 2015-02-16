@@ -4,7 +4,7 @@
 
 1.- Drag and drop Appollo.framework into your project and ```#import <Appollo/Appollo.h>``` on your AppDelegate
 
-2.- Copy this code into your AppDelegate::application:didFinishLaunchingWithOptions: and replace the Api Key.
+2.- Initialize Appollo in your AppDelegate::application:didFinishLaunchingWithOptions: and replace the Api Key.
 
     [APCore
         appolloWithApiKey: @"YOUR-API-KEY"
