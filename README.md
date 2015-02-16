@@ -1,6 +1,12 @@
 # Appollo
 
+### Requeriments
+
+Appollo is designed to work in iOS 8 o greater.
+
 ### Initialize
+
+[Complete AppDelegate example](https://github.com/inmediatum/appollo/blob/master/AppDelegateExample)
 
 1.- Drag and drop Appollo.framework into your project and ```#import <Appollo/Appollo.h>``` on your AppDelegate
 
@@ -42,10 +48,36 @@
 
 8.- In Build Settings -> Other Linker Flags add -ObjC
 
-### Examples
+### Manage notifications on foreground
 
-[Complete AppDelegate example](https://github.com/inmediatum/appollo/blob/master/AppDelegateExample)
+1.- Implement the ```<APMonitorDelegate>``` protocol
 
-### Requeriments
+2.- Delegate Monitor in your class.
+    
+    [APCore monitor].delegate = self;
 
-Appollo is designed to work in iOS 8 o greater.
+Note if your class is UIViewController is a good idea to delegate in viewDidLoad method.
+
+3.- Implement the APMonitorDelegate
+
+    #pragma mark - APMonitorDelegate
+
+    - (void)didReceiveNotification:(APTag *)tag
+    {
+        NSLog(@"Tag: %@", tag);
+    }
+    
+    - (void)userRejectPermissions
+    {
+        NSLog(@"User reject permissions");
+    }
+    
+    - (void)userAcceptPermissions
+    {
+        NSLog(@"User accept permissions");
+    }
+    
+    - (void)uncompatibleDevice
+    {
+        NSLog(@"Uncompatible device");
+    }
