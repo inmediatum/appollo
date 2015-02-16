@@ -42,6 +42,10 @@
 
 8.- In Build Settings -> Other Linker Flags add -ObjC
 
+### Examples
+
+[Complete AppDelegate example](https://github.com/inmediatum/appollo/blob/master/AppDelegateExample)
+
 ### Requeriments
 
 Appollo is designed to work in iOS 8 o greater.
