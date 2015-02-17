@@ -44,6 +44,8 @@ Appollo is designed to work in iOS 8 o greater.
   * Acts as a Bluetooth LE Accesory
   * Remote Notifications
 
+![Example](http://g.recordit.co/49PhtyEP60.gif)
+
 7.- In Info.plist add NSLocationAlwaysUsageDescription and explain in natural language why your app should use the location.
 
 8.- In Build Settings -> Other Linker Flags add -ObjC
