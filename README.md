@@ -50,6 +50,8 @@ Appollo is designed to work in iOS 8 o greater.
 
 8.- In Build Settings -> Other Linker Flags add -ObjC
 
+![Example](http://g.recordit.co/MmKC1otP4n.gif)
+
 ### Manage notifications on foreground
 
 [Take look Appollo Console source-code for complete example](https://github.com/inmediatum/appollo-console-ios)
