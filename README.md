@@ -6,7 +6,7 @@ Appollo is designed to work in iOS 8 o greater.
 
 ### Initialize
 
-[Complete AppDelegate example](https://github.com/inmediatum/appollo/blob/master/AppDelegateExample) (Point 1-2-3-4-5)
+[Complete AppDelegate example](https://github.com/inmediatum/appollo/blob/master/AppDelegateExample) (step 1-2-3-4-5)
 
 1.- Drag and drop Appollo.framework into your project and ```#import <Appollo/Appollo.h>``` on your AppDelegate
 
