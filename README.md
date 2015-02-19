@@ -2,7 +2,7 @@
 
 ### Permissions
 
-* Notifications permission it's used to receive silent notifications each time administrator change tags information on Dashboard. This permission it's optional and the logic to register in APNs must be implemented by developer.
+* Notifications permission it's used to receive silent notifications each the administrator change tags information on Dashboard. This permission it's optional and the logic to register in APNs must be implemented by developer.
 
 * Location permission it's required to track user location and trigger notifications. Appollo framework manage the request.
 
