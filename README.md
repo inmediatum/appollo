@@ -70,7 +70,7 @@ Appollo is designed to work in iOS 8 o greater.
     
     [APCore monitor].delegate = self;
 
-Note if your class is UIViewController is a good idea to delegate in viewDidLoad method.
+Note if your class inherhit from UIViewController is a good idea to delegate in viewDidLoad method.
 
 3.- Implement the APMonitorDelegate
 
