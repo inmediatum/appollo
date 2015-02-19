@@ -1,5 +1,11 @@
 # Appollo
 
+### Permissions
+
+* Notifications permission it's used to receive silent notifications each time administrator change tags information on Dashboard. This permission it's optional and the logic to register in APNs must be implemented by developer.
+
+* Location permission it's required to track user location and trigger notifications. Appollo framework manage the request.
+
 ### Requeriments
 
 Appollo is designed to work in iOS 8 o greater.
@@ -10,7 +16,7 @@ Appollo is designed to work in iOS 8 o greater.
 
 1.- Drag and drop Appollo.framework into your project and ```#import <Appollo/Appollo.h>``` on your AppDelegate
 
-2.- Initialize Appollo in your AppDelegate::application:didFinishLaunchingWithOptions: and replace the Api Key.
+2.- Initialize Appollo in your AppDelegate application:didFinishLaunchingWithOptions: and replace the Api Key.
 
     [APCore
         appolloWithApiKey: @"YOUR-API-KEY"
@@ -19,11 +25,11 @@ Appollo is designed to work in iOS 8 o greater.
     
     [[APCore monitor] startMonitoringAll];
     
-3.- On AppDelegate::application:didRegisterForRemoteNotificationsWithDeviceToken: add
+3.- On AppDelegate application:didRegisterForRemoteNotificationsWithDeviceToken: add
 
     [APCore suscribeToChangesNotifications:deviceToken];
     
-4.- On AppDelegate::application:didReceiveRemoteNotification:fetchCompletionHandler: add
+4.- On AppDelegate application:didReceiveRemoteNotification:fetchCompletionHandler: add
 
     [APCore fetchUpdateInBackground:^(UIBackgroundFetchResult result) {
         dispatch_async(dispatch_get_main_queue(), ^{
@@ -32,7 +38,7 @@ Appollo is designed to work in iOS 8 o greater.
         });
     }];
     
-5.- On AppDelegate::application:didReceiveLocalNotification: add
+5.- On AppDelegate application:didReceiveLocalNotification: add
 
     id remoteData = [APCore didReceiveLocalNotification:notification];
     
